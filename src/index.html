@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8" />
+        <title>Crypto Transaction Decoder</title>
+        <link rel="stylesheet" href="css/bootstrap-3.3.7.css">
+        <link rel="stylesheet" href="css/app.css">
+        <meta content="Crypto transaction decoder" name="description"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="Pavlos Tzegiannakis" name="author" />
+    </head>
+    <body>
+		<div class="container">
+	        <h1 class="text-center">Transaction Decoder</h1>
+					<p class="version">v1.0.0</p>
+	        <hr>
+                <div class="transaction-hex">
+                    <label class="control-label">Transaction Hex</label>
+                    <div>
+                        <textarea class="transaction-hex-text txRawBytes private-data form-control" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+                    </div>
+                </div>
+                <div class="network-selector">
+                    <label for="network" class="control-label">Network</label>
+                    <div>
+                        <select class="network form-control">
+                            <!-- populated by javascript -->
+                        </select>
+                    </div>
+                </div>
+
+			<div class="decoding-button-container">
+				<button class="decoding-button blue">Decode Transaction</button>
+			</div>
+
+			<hr>
+
+			<pre readonly class="decoded-tx"></pre>
+
+			<hr>
+			<div>
+				<h2>This project is 100% open-source code</h2>
+				<p>
+						<span>Get the source code from the repository -</span>
+						<a href="https://github.com/PavlosTze/crypto-transaction-decoder" target="_blank">https://github.com/PavlosTze/crypto-transaction-decoder</a>
+				</p>
+			</div>
+			<div>
+				<h2>Feedback</h2>
+				<p>
+						<span>For any feedback kindly open an issue or email me at</span>
+						<a href="mailto:pavlostze@gmail.com" target="_blank">pavlostze@gmail.com</a>
+				</p>
+			</div>
+		</div>
+
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="js/Buffer.js"></script>
+        <script src="js/bootstrap-3.3.7.js"></script>
+        <script src="js/bnbDecoder.js"></script>
+        <script src="js/rippleDecoder.js"></script>
+        <script src="js/ethereumjs-util.js"></script>
+        <script src="js/groestlcoinjs-3.3.2.js"></script>
+        <script src="js/bchaddrjs-0.2.1.js"></script>
+        <script src="js/smartcashjs.js"></script>
+        <script src="js/tronTransactionDecoder.js"></script>
+        <script src="js/arkTransactionDecoder.js"></script>
+        <script src="js/moneroTransactionDecoder.js"></script>
+        <script src="js/nemTransactionDecoder.js"></script>
+        <script src="js/algoTransactionDecoder.js"></script>
+        <script src="js/utxofamilyjs.js"></script>
+        <script src="js/bitcoinjs-3.3.2.js"></script>
+        <script src="js/decredjs-lib.js"></script>
+        <script src="js/bitcoinjs-extensions.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
